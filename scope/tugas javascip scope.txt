@@ -1,0 +1,58 @@
+/// Soal - 01
+/// Kita sudah belajar mengenai variable scope yang dimiliki oleh Javascript
+/// dan kamu diminta untuk merangkum tentang:
+/// - ada berapa banyak jumlah variable scope pada Javascript?
+/// - jelaskan secara singkat setiap variable scope yang dimiliki oleh Javascript
+/// - buatlah implementasi sederhana dari tiap-tiap variable scope yang dimiliki oleh Javascript
+
+/// WRITE YOUR ANALYSIS HERE 
+jumlah variable scope pada javascript adalah ada 3 yaitu blocks, Global Scope, Local Scope
+1. blocks
+blocks adalah code yang berada didalam curly braces {}
+ contohnya: 
+{
+  let x = 2;
+}
+
+2. global scope
+global scope variabel yang dideklarasikan secara Global (di luar fungsi apa pun) memiliki Lingkup Global.
+Variabel global dapat diakses dari mana saja dalam program JavaScript.Variabel yang dideklarasikan dengan var, let dan const sangat mirip ketika dideklarasikan di luar blok.
+Mereka semua memiliki Lingkup Global
+contohnya:
+let myName = 'ina'
+function greeting () {
+    return myName;
+}
+console.log(myName);
+
+3. local scope
+local scope adalah Variabel yang dideklarasikan dalam fungsi JavaScript, menjadi LOKAL untuk fungsi tersebut.
+Karena variabel lokal hanya dikenali di dalam fungsinya, variabel dengan nama yang sama dapat digunakan dalam fungsi yang berbeda.
+
+Variabel lokal dibuat saat fungsi dimulai, dan dihapus saat fungsi selesai.
+contoh:
+function greeting () {
+    let myName = 'ina';
+    return myName;
+}
+console.log(greeting ())
+
+
+
+/// Soal - 02
+/// Kamu diminta untuk melakukan analisa terhadap baris kode dibawah ini
+/// - apa yang akan tampil didalam comsole.log ?
+/// - apa alasan yang menyebabkan hasil dari console itu bukan nilai dari variable name?
+
+/// WRITE YOUR ANALYSIS HERE
+///
+const name = "John Watson";
+
+function printFirstName(name) {
+  return name.split(" ")[0];
+}
+
+console.log(printFirstName("Mariah Carey"));
+
+menampilkan mariah
+karena console.log yang memanggil printFirstName

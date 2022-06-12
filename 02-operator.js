@@ -13,9 +13,21 @@
 /// gajiLembur = 5% dari gajiPokok
 
 /// Sisa Gajii
-const sisaGaji;
+const gajiPokok = 5000000 
+console.log(gajiPokok)
 
-console.log()
+const gajiBonus = 5000000*10/100
+console.log(gajiBonus)
+
+const gajiLembur = gajiPokok*5/100
+console.log(gajiLembur)
+
+const Pegeluaran = 750000+2000000+1000000+250000
+console.log(Pegeluaran)
+
+const sisaGaji = gajiPokok-Pegeluaran
+console.log(sisaGaji)
+
 
 
 
@@ -23,18 +35,22 @@ console.log()
 /// Gunakan operator yang tepat untuk mengetahui apakah 2 variable dibawah ini memiliki nilai yang sama (tipe data tidak termasuk)
 const oneInString = "1";
 const oneInNumber = 1;
-const isSame;
-console.log(isSame(typeInNumber))
+const isSame = oneInString==oneInNumber
+console.log (isSame)
 
 
 /// Soal - 03
 /// Gunakan operator yang tepat untuk mengetahui apakah studentA memiliki nilai yang lebih tinggi atau sama dengan studentB
 const studentA = 75;
 const studentB = 80;
-const isHigher;
-console.log(isHigher())
+const isHigher = Math.max (studentA,studentB)
+console.log(isHigher)
+
+
 
 
 /// Soal - 04
 /// Gunakan operator yang tepat untuk membedakan 2 buah variable yang terdapat pada soal-02 berdasarkan value-nya (tipe data juga dihitung)
-const final;
+
+const final = oneInString===oneInNumber
+console.log (final)
